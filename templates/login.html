@@ -14,24 +14,22 @@
 
 <form action="" method="post">
 
-
   <div class="container">
     <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required value="{{
-          request.form.username }} ">
+    <input type="text" placeholder="Enter Username" name="username" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required value="{{
-          request.form.password }}">
+    <input type="password" placeholder="Enter Password" name="password" required>
 
-      <a href="/dashboard/"> <button type="submit" class="btn btn-primary">Submit</button> </a>
-    <label>
+       <label>
+    <button type="submit" class="btn btn-outline-secondary" data-dismiss="modal">Submit</button>
+      </label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="submit" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
